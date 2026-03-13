@@ -1,0 +1,16 @@
+{
+  "name": "navblue Waveshare AMOLED 1.75C",
+  "version": "1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "firmware/navblue_waveshare_v1.0.1.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
