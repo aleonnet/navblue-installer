@@ -16,9 +16,9 @@ Built with [esptool-js](https://github.com/espressif/esptool-js) for full contro
 
 ```
 navblue-device-web-installer/
-  index-v3.html         # Main installer page (self-contained, no CDN dependencies)
+  index.html            # Main installer page (self-contained, no CDN dependencies)
   index-v2.html         # esptool-js via CDN (kept for reference)
-  index.html            # ESP Web Tools version (kept for reference)
+  index-v1.html         # ESP Web Tools version (kept for reference)
   manifest.json         # Firmware manifest (version, chip family, binary path)
   lib/
     esptool-bundle.js   # esptool-js 0.5.7 bundle (local copy)
@@ -111,7 +111,7 @@ git push
 
 ### Step 4 — Set the entry page
 
-Rename or copy `index-v3.html` to `index.html` before pushing (or configure GitHub Pages to serve it). The page will be live at:
+The `index.html` is already the main installer. The page will be live at:
 
 ```
 https://aleonnet.github.io/navblue-installer/
@@ -161,6 +161,6 @@ If the device isn't detected, the user may need to enter **Download Mode**:
 
 | File | Description |
 |---|---|
-| `index-v3.html` | **Current** — esptool-js self-contained (all assets local) |
-| `index-v2.html` | esptool-js via unpkg CDN |
-| `index.html` | ESP Web Tools (external modals) |
+| `index.html` | **Current** — esptool-js self-contained (all assets local) |
+| `index-v2.html` | esptool-js via unpkg CDN (reference) |
+| `index-v1.html` | ESP Web Tools with external modals (reference) |
