@@ -4,6 +4,17 @@ Web-based firmware installer for the **navblue Waveshare ESP32-S3-Touch-AMOLED-1
 
 Built with [esptool-js](https://github.com/espressif/esptool-js) for full control of the flashing process within a custom UI.
 
+## Companion mobile app (Navblue)
+
+Firmware flashed with this installer powers the **Navblue** HUD hardware. The **[Navblue]** mobile app works **together with the Navblue device**: it connects over **Bluetooth** to the external display and provides **routes and turn-by-turn navigation** for motorcyclists, so you can follow directions on the device without mounting the phone on the handlebar.
+
+| Store | Link |
+|--------|------|
+| **Google Play** (Android) | [Navblue on Google Play](https://play.google.com/store/apps/details?id=com.energuide.navblue) |
+| **App Store** (iOS) | [Navblue on the App Store](https://apps.apple.com/app/navblue/id6651858865) |
+
+> The web installer only updates device firmware; routing and map features require the Navblue app on a phone paired to the board.
+
 ## Requirements
 
 - **Browser**: Google Chrome or Microsoft Edge (desktop or Android)
@@ -55,17 +66,26 @@ This will:
 
 ## Local Testing
 
+**Do not** open `index.html` via `file://` in the browser. The installer loads `manifest.json` and firmware with `fetch()`; `file://` origins break that flow (and ESP Web Tools-based pages behave the same way). Always serve this directory over HTTP(S).
+
+Recommended local flow:
+
 ```bash
 cd navblue-device-web-installer
-
-# Option 1: Python HTTP server (page renders, serial requires user gesture)
 python3 -m http.server 8080
-
-# Option 2: HTTPS locally (required for Web Serial to fully work)
-npx serve .
 ```
 
-> Web Serial requires HTTPS or `localhost`. For full testing, use `localhost` or deploy to GitHub Pages.
+Then open **Chrome or Edge** at:
+
+```
+http://localhost:8080/
+```
+
+(Use another free port if `8080` is taken — e.g. `python3 -m http.server 8080` → `http://localhost:8080/`.)
+
+**Alternative:** `npx serve .` (may serve over HTTPS depending on the tool) — still use `localhost` or HTTPS so Web Serial is allowed.
+
+> Web Serial requires **HTTPS** or **`http://localhost`**. For full testing, use a local server as above or deploy to GitHub Pages.
 
 ## Deploy to GitHub Pages
 
