@@ -17,7 +17,7 @@ Todas as alterações notáveis deste repositório (instalador web + firmware pu
 
 ### Documentação (`README.md`)
 
-- Testes locais: servir a pasta via HTTP (ex.: `python3 -m http.server 8765` → `http://localhost:8765/`); aviso explícito para **não** abrir páginas com `file://` (quebra `fetch` do manifest e do fluxo de instalação).
+- Testes locais: servir a pasta via HTTP (ex.: `python3 -m http.server 8080` → `http://localhost:8080/`); aviso explícito para **não** abrir páginas com `file://` (quebra `fetch` do manifest e do fluxo de instalação).
 - App móvel **Navblue** em conjunto com o device HUD: descrição resumida e links para [Google Play](https://play.google.com/store/apps/details?id=com.energuide.navblue) e [App Store](https://apps.apple.com/app/navblue/id6651858865).
 
 ---
