@@ -2,6 +2,23 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [1.1.0] — 2026-04-03
+
+### Firmware
+
+- Binário publicado: `firmware/navblue_waveshare_v1.1.0.bin` (substitui `navblue_waveshare_v1.0.2.bin`).
+- `manifest.json` atualizado para versão **1.1.0** e caminho do `.bin` correspondente.
+- HUD do device passa a renderizar a rota com:
+  - **cores por leg** entre waypoints;
+  - **trecho já percorrido esmaecido**;
+  - manutenção do protocolo BLE existente, sem alterar o payload publicado pelo instalador.
+
+### Instalador web
+
+- Sem mudanças funcionais na interface; publicação alinhada ao novo firmware `1.1.0`.
+
+---
+
 ## [1.0.2] — 2026-03-23
 
 ### Firmware
