@@ -2,6 +2,25 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [1.2.0] — 2026-04-26
+
+### Firmware
+
+- Binário publicado: `firmware/navblue_waveshare_v1.2.0.bin` (substitui `navblue_waveshare_v1.1.0.bin`).
+- `manifest.json` atualizado para versão **1.2.0** e caminho do `.bin` correspondente.
+- Firmware Waveshare atualizado com:
+  - streaming BLE contínuo com métricas e controle de payload;
+  - roads tile-aware no protocolo BLE, preservando compatibilidade com o contrato legado;
+  - janela local de polyline com coloração por progresso/leg;
+  - otimizações de renderização de roads e clipping;
+  - instrumentação disponível apenas no ambiente debug, sem custo de logs no build de uso real.
+
+### Instalador web
+
+- Sem mudanças funcionais na interface; publicação alinhada ao novo firmware `1.2.0`.
+
+---
+
 ## [1.1.0] — 2026-04-03
 
 ### Firmware
