@@ -2,6 +2,25 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [1.4.0] — 2026-04-30
+
+### Firmware
+
+- Binário publicado: `firmware/navblue_waveshare_v1.4.0.bin` (substitui `navblue_waveshare_v1.2.0.bin`).
+- `manifest.json` atualizado para versão **1.4.0** e caminho do `.bin` correspondente.
+- Firmware Waveshare atualizado com:
+  - schema `FeatureInfoPB` tipado para roads v2;
+  - renderização diferenciada de bridge, viaduct, tunnel e ford;
+  - polyline de rota sempre como camada visual superior;
+  - HUD de velocidade vermelho apenas com `speedLimit > 0`;
+  - harness agregado `pio test` corrigido com suite Unity embarcada.
+
+### Instalador web
+
+- Sem mudanças funcionais na interface; publicação alinhada ao firmware `1.4.0`.
+
+---
+
 ## [1.2.0] — 2026-04-26
 
 ### Firmware
