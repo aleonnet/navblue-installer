@@ -4,7 +4,7 @@ Web-based firmware installer for the **navblue Waveshare ESP32-S3-Touch-AMOLED-1
 
 Built with [esptool-js](https://github.com/espressif/esptool-js) for full control of the flashing process within a custom UI.
 
-**Firmware publicado:** `1.4.0` (`firmware/navblue_waveshare_v1.4.0.bin`)
+**Firmware publicado:** `1.4.1` (`firmware/navblue_waveshare_v1.4.1.bin`)
 
 ## Companion mobile app (Navblue)
 
@@ -119,8 +119,8 @@ Or manually:
 By default `.gitignore` excludes `firmware/*.bin`. To distribute the firmware via GitHub Pages, temporarily override:
 
 ```bash
-git add -f firmware/navblue_waveshare_v1.4.0.bin
-git commit -m "Add firmware v1.4.0 binary for web installer"
+git add -f firmware/navblue_waveshare_v1.4.1.bin
+git commit -m "Add firmware v1.4.1 binary for web installer"
 git push
 ```
 

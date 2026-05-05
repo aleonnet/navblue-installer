@@ -2,6 +2,23 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [1.4.1] — 2026-05-05
+
+### Firmware
+
+- Binário publicado: `firmware/navblue_waveshare_v1.4.1.bin` (substitui `navblue_waveshare_v1.4.0.bin` no manifesto).
+- `manifest.json` atualizado para versão **1.4.1** e caminho do `.bin` correspondente.
+- Firmware Waveshare atualizado com:
+  - correção da janela canônica de polyline em rotas com geometrias sobrepostas;
+  - prioridade visual por progresso canônico de navegação;
+  - fade preservado pelo progresso geométrico da janela recebida.
+
+### Instalador web
+
+- Sem mudanças funcionais na interface; publicação alinhada ao firmware `1.4.1`.
+
+---
+
 ## [1.4.0] — 2026-04-30
 
 ### Firmware
