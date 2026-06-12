@@ -2,6 +2,19 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [Site 1.0.0] — 2026-06-12
+
+### Site
+
+- **Landing page do NavBlue** como nova raiz do site (`index.html`): hero parallax "night ride" com grid 3D animado e mock de navegação (rota com gradiente de progresso, pulso de energia e marcador do veículo), mini-clipe animado do problema (queda, chuva, furto), mock fiel do AMOLED 1.75" com mini-HUD vivo (ícones de manobra reais do firmware, vias com esmaecimento radial), telas reais do app nos passos e na seção Mapa do Brasil, recorte do device em rota (WebP com alpha), botões das lojas no padrão store-button e SEO/OG tags.
+- **Instalador preservado** em `install.html` (conteúdo do antigo `index.html`; mudanças: grafia NavBlue, favicon e link "← NavBlue" de volta à landing).
+- **Demo cinematográfica** publicada em `demo.html` (replay interativo da engine de navegação, gerado por `guidance-sim_cinematic.py` do app): chave Mapbox e opção SAT removidas; grafia NavBlue, favicon e link de volta.
+- `README.md` reescrito para o novo propósito do repositório (site oficial com três páginas).
+
+### Instalador web
+
+- Sem mudanças funcionais no fluxo de flash; firmware publicado permanece `1.4.1`.
+
 ## [1.4.1] — 2026-05-05
 
 ### Firmware
