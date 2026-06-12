@@ -2,6 +2,12 @@
 
 Todas as alterações notáveis deste repositório (instalador web + firmware publicado) serão documentadas aqui.
 
+## [Site 1.0.1] — 2026-06-12
+
+### Corrigido
+
+- **Dessincronia entre o marcador do veículo e o rastro da rota no hero**: o `animateMotion` usava `calcMode="linear"` (tempo igual por segmento do path) enquanto o rastro avançava por distância, e veículo (SMIL) e rastro/pulso (CSS) rodavam em timelines distintas que divergiam com a aba em segundo plano. Agora as três animações compartilham a timeline SMIL do SVG com pacing por distância — sincronia garantida por construção.
+
 ## [Site 1.0.0] — 2026-06-12
 
 ### Site
